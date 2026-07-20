@@ -1,80 +1,24 @@
-# =========================
-# Dependencies
-# =========================
-node_modules/
-
-# =========================
-# Environment Variables
-# =========================
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# =========================
 # Logs
-# =========================
-logs/
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# =========================
-# Build Files
-# =========================
-dist/
-build/
-coverage/
+node_modules
+dist
+dist-ssr
+*.local
 
-# =========================
-# Cache
-# =========================
-.cache/
-.parcel-cache/
-.eslintcache
-.vite/
-.next/
-.nuxt/
-
-# =========================
-# OS Files
-# =========================
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-
-# =========================
-# IDE / Editor
-# =========================
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# =========================
-# Runtime Files
-# =========================
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# =========================
-# Temporary Files
-# =========================
-tmp/
-temp/
-
-# =========================
-# MongoDB Data (if stored locally)
-# =========================
-data/
-*.db
-
-# =========================
-# Miscellaneous
-# =========================
-*.tgz
-*.gz
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
