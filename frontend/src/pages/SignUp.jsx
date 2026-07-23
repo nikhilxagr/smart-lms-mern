@@ -2,10 +2,14 @@ import React,{useState} from 'react'
 import google from '../assets/google.jpg'
 import {IoEyeOutline} from 'react-icons/io5'
 import {IoEye} from 'react-icons/io5'
+import logo from '../assets/logo.png'
+import { useNavigate } from "react-router-dom";
+
 
 
 function SignUp() {
   const[show, setShow] = useState(false)
+  const navigate = useNavigate()
   return (
    <div className="bg-[#dddbdb] w-screen h-screen flex items-center justify-center">
     <form className='w-[90%] md:w-200 h-150 bg-[white] shadow-xl rounded-2xl flex'>
@@ -45,14 +49,14 @@ function SignUp() {
         </div>
         <div className='w-[80%] h-[40px] border-1 border-[black] rounded-[5px] flex items-center justify-center'>
         <img src={google} alt="Google" className="w-[25px]" />
-        <span className='text-[18px] text-gray-500'>oogle</span>
+        <span className='text-[18px] text-gray-500'>Google</span>
         </div>
+        <div className='text-[#6f6f6f]'> Already Have an account?<span className='underline-offset-1 text-[black] underline cursor-pointer' onClick={()=>navigate("/login")}> Login</span> </div>
         </div>
 
         {/* right div */}
         <div className='w-1/2 h-full rounded-r-2xl bg-[black] md:flex items-center justify-center flex-col  hidden'>
-             <img src="/logo.png" alt="Logo" className="w-24 h-24" />
-            <span className='text-2xl text-white'>VIRTUAL COURSES</span>
+             <img src={logo} alt="Logo" className="w-75 h-75" />
         </div>
 
     </form>
