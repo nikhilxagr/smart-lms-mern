@@ -61,6 +61,9 @@ function Login() {
           <button className="w-[80%] h-[40px] bg-black text-white cursor-pointer flex items-center justify-center rounded-[5px]">
             Login
           </button>
+          <span className="text-[#6f6f6f] cursor-pointer" onClick={() => navigate("/forgot-password")}>
+            Forget Password?
+          </span>
 
           <div className="w-[80%] flex items-center gap-2">
             <div className="w-[25%] h-[0.5px] bg-[#c4c4c4]"></div>
